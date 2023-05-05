@@ -49,57 +49,150 @@
     <!--!NavBar!-->
   <div class="container mt-3">
     <h2 class="text-center">Enter a task</h2>
-    <form action="/action_page.php">
+      <form action="/action_page.php">
 
-      <div class="mb-3 mt-3">
-        <label for="taskName">Task Name:</label>
-        <input type="text" class="form-control" id="taskName" placeholder="Task Name" name="taskName">
-      </div>
+        <div class="mb-3 mt-3">
+          <label for="taskName">Task Name:</label>
+          <input type="text" class="form-control" id="taskName" placeholder="Task Name" name="taskName">
+        </div>
 
-      <div class="mb-3 mt-3">
-        <label for="description">Description:</label>
-        <textarea class="form-control" id="description" placeholder="Task Description" name="description"></textarea>
-      </div>
-      <div class="mb-3 mt-3">
-        <label for="assignedTo">Assigned To:</label>
-        <select class="form-control" id="names" name="names">
-            <option value="kris">Kris</option>
-            <option value="jawaria">Jawaria</option>
-            <option value="benson">Benson</option>
-        </select>
-      </div>
+        <div class="mb-3 mt-3">
+          <label for="description">Description:</label>
+          <textarea class="form-control" id="description" placeholder="Task Description" name="description"></textarea>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="assignedTo">Assigned To:</label>
+          <select class="form-control" id="names" name="names">
+              <option value="kris">Kris</option>
+              <option value="jawaria">Jawaria</option>
+              <option value="benson">Benson</option>
+          </select>
+        </div>
 
-      <div class="mb-3 mt-3">
-        <label for="dueDate">Due Date:</label>
-        <input type="date" class="form-control" id="dueDate" name="dueDate">
+        <div class="mb-3 mt-3">
+          <label for="dueDate">Due Date:</label>
+          <input type="date" class="form-control" id="dueDate" name="dueDate">
+        </div>
+        <label for="status">Status:</label>
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="status" id="done">
+          <label class="form-check-label" for="done">Done</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="status" id="no-done">
+          <label class="form-check-label" for="no-done">No-Done</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="status" id="process">
+          <label class="form-check-label" for="process">Process</label>
+        </div>
+        <div class="row">
+          <div class="col offset-11">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+      <hr>
+
+      <div class="row my-4">
+        <div class="col col-xs-12">
+            <div class="card m-auto" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Task</h5>
+                  <p class="card-text">Description</p>
+                  <p class="card-text">Assigned to:</p>
+                  <p class="card-text">Due Date:</p>
+                  <p class="card-text">Status:</p>
+
+                  <input class="form-check-input" type="radio" name="status" id="card-done">
+                  <label class="form-check-label" for="card-done">Done</label>
+                  <input class="form-check-input" type="radio" name="status" id="card-no-done">
+                  <label class="form-check-label" for="card-no-done">No-Done</label>
+                  <input class="form-check-input" type="radio" name="status" id="card-process">
+                  <label class="form-check-label" for="card-process">Process</label>
+
+                </div>
+              </div>
+        </div>
+        <div class="col col-xs-12">
+          <div class="card m-auto" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Task</h5>
+                <p class="card-text">Description</p>
+                <p class="card-text">Assigned to:</p>
+                <p class="card-text">Due Date:</p>
+                <p class="card-text">Status:</p>
+
+                <input class="form-check-input" type="radio" name="status" id="card-done">
+                <label class="form-check-label" for="card-done">Done</label>
+                <input class="form-check-input" type="radio" name="status" id="card-no-done">
+                <label class="form-check-label" for="card-no-done">No-Done</label>
+                <input class="form-check-input" type="radio" name="status" id="card-process">
+                <label class="form-check-label" for="card-process">Process</label>
+
+              </div>
+            </div>
       </div>
-      <label for="status">Status:</label>
-      <div class="form-check">
-        
-        <input class="form-check-input" type="radio" name="status" id="done">
-        <label class="form-check-label" for="done">
-          Done
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="status" id="no-done">
-        <label class="form-check-label" for="no-done">
-          No-Done
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="status" id="process">
-        <label class="form-check-label" for="process">
-          Process
-        </label>
-      </div>
-      <div class="row">
-        <div class="col offset-11">
-          <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="col col-xs-12">
+        <div class="card m-auto" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task</h5>
+              <p class="card-text">Description</p>
+              <p class="card-text">Assigned to:</p>
+              <p class="card-text">Due Date:</p>
+              <p class="card-text">Status:</p>
+
+              <input class="form-check-input" type="radio" name="status" id="card-done">
+              <label class="form-check-label" for="card-done">Done</label>
+              <input class="form-check-input" type="radio" name="status" id="card-no-done">
+              <label class="form-check-label" for="card-no-done">No-Done</label>
+              <input class="form-check-input" type="radio" name="status" id="card-process">
+              <label class="form-check-label" for="card-process">Process</label>
+
+            </div>
+          </div>
+    </div>
+    <div class="col col-xs-12">
+      <div class="card m-auto" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Task</h5>
+            <p class="card-text">Description</p>
+            <p class="card-text">Assigned to:</p>
+            <p class="card-text">Due Date:</p>
+            <p class="card-text">Status:</p>
+
+            <input class="form-check-input" type="radio" name="status" id="card-done">
+            <label class="form-check-label" for="card-done">Done</label>
+            <input class="form-check-input" type="radio" name="status" id="card-no-done">
+            <label class="form-check-label" for="card-no-done">No-Done</label>
+            <input class="form-check-input" type="radio" name="status" id="card-process">
+            <label class="form-check-label" for="card-process">Process</label>
+
+          </div>
+        </div>
+  </div>
+  <div class="col col-xs-12 mt-3">
+    <div class="card m-auto" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Task</h5>
+          <p class="card-text">Description</p>
+          <p class="card-text">Assigned to:</p>
+          <p class="card-text">Due Date:</p>
+          <p class="card-text">Status:</p>
+
+          <input class="form-check-input" type="radio" name="status" id="card-done">
+          <label class="form-check-label" for="card-done">Done</label>
+          <input class="form-check-input" type="radio" name="status" id="card-no-done">
+          <label class="form-check-label" for="card-no-done">No-Done</label>
+          <input class="form-check-input" type="radio" name="status" id="card-process">
+          <label class="form-check-label" for="card-process">Process</label>
+
         </div>
       </div>
-    </form>
+</div>
   </div>
+
 
 
   <div class="row">
